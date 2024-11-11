@@ -48,8 +48,8 @@ User.findById = (id, result) => {
       console.log("Error: ", err);
       result(err, null);
     } else {
-      console.log("User: ", user);
-      result(null, user);
+      console.log("User: ", user[0]);
+      result(null, user[0]);
     }
   });
 };
